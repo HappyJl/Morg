@@ -1,0 +1,144 @@
+body{
+    margin: 0px;
+    background-color: var(--sub-color);
+    transition: all 220ms ease;
+}
+.main{
+    padding: 5% 50px 0px 50px;
+    min-height: 650px;
+    display: flex;
+}
+.conteiner{
+    font-size: 20px;
+    color: black;
+}
+.goods{
+    display: flex;
+    transition: all 220ms ease;
+    border-radius: 8px;
+    background-color: var(--main-color);
+    margin-top: 40px;
+    text-decoration: none;
+    text-align: justify;
+}
+.goods_img{
+    border-radius: 8px;
+    width: 175px;
+    min-height: 100%;
+}
+.goods:hover{
+    box-shadow: 0px  0px 10px black;
+}
+.sub_goods{
+    padding-top: 50px;
+    margin-left: 10px;
+    display: flex;
+    font-size: 28px;
+}
+.sub_sub_goods{
+    display: flex;
+    padding-left: 20px;
+}
+.name{
+    width: 700px;
+}
+.price{
+    margin-left: 10px;
+}
+.bat{
+    background-color: var(--sub-color);
+    border: 0px;
+    font-size: 24px;
+    width: 30px;
+    height: 30px;
+    border-radius: 90px;
+    transition: all 220ms ease;
+    margin-right: 10px;
+}
+.bat:hover{
+    box-shadow: 0px 0px 3px 1px black;
+    cursor: pointer;
+    transform: scale(1.2);
+}
+.sum{
+    margin-left: 250px;
+    transition: all 220ms ease;
+    border-radius: 8px;
+    background-color: var(--main-color);
+    margin-top: 40px;
+    width: 300px;
+    height: 300px;
+    box-shadow: 0px 0px 5px 1px black;
+}
+.sum_text{
+    font-size: 48px;
+    margin-left: 30%;
+    margin-top: 5%;
+}
+.sum_sum{
+    font-size: 38px;
+    margin-top: 50px;
+    margin-left: 35%;
+}
+.sum_bat{
+    background-color: var(--sub-color);
+    border: 0px;
+    font-size: 24px;
+    transition: all 220ms ease;
+    margin-left: 35%;
+    margin-top: 70px;
+    border-radius: 8px;
+}
+.sum_bat:hover{
+    box-shadow: 0px 0px 3px 1px black;
+    cursor: pointer;
+    transform: scale(1.2);
+}
+@media (max-width: 1840px){
+    .name{
+        width: 600px;
+    }
+}
+@media (max-width: 1680px){
+    .name{
+        width: 500px;
+    }
+}
+@media (max-width: 1440px){
+    .name{
+        width: 350px;
+        font-size: 22px;
+    }
+    .sum{
+        margin-left: 100px;
+    }
+}
+@media (max-width: 1024px){
+    .main{
+        display: block;
+    }
+    .name{
+        width: 450px;
+    }
+    .sum{
+        margin-left: 35%;
+    }
+}
+@media (max-width: 768px){
+    .main{
+        display: block;
+    }
+    .name{
+        width: 250px;
+        font-size: 18px
+    }
+    .sum{
+        margin-left: 30%;
+    }
+    .col{
+        font-size: 18px
+    }
+    .price{
+        font-size: 18px
+    }
+}

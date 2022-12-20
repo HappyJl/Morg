@@ -1,0 +1,139 @@
+body{
+    margin: 0px;
+    background-color: var(--sub-color);
+    transition: all 220ms ease;
+}
+.main{
+    padding: 5% 60px 60px;
+}
+.banner{
+    width: 80%;
+}
+.main_banners{
+    display: flex;
+    flex-direction: column;
+}
+.image {
+    position: relative;
+    margin-bottom: 50px;
+    transition: all 620ms ease;
+}
+.image:hover{
+    transform: scale(1.05);
+}
+.image img {
+    width: 100%;
+    height: 500px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 20px 5px black;
+}
+.image-filter {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #000;
+    opacity: 0.6;
+    border-radius: 8px;
+}
+.image-text {
+    text-align: center;
+    position: absolute;
+    font-size: 48px;
+    color: white;
+    top: 45%;
+    left: 25%;
+    transition: all 220ms ease;
+}
+@media (max-width: 1440px){
+    .main{
+        padding: 7% 60px 60px;
+    }
+    .image-text{
+        top: 43%;
+        left: 17%;
+    }
+}
+@media (max-width: 1440px){
+    .main{
+        padding: 7% 60px 60px;
+    }
+    .image-text{
+        top: 43%;
+        left: 17%;
+    }
+}
+@media (max-width: 1280px){
+    .main{
+        padding: 8% 60px 60px;
+    }
+    .image-text{
+        top: 43%;
+        left: 12%;
+    }
+}
+@media (max-width: 1024px){
+    .main{
+        padding: 9% 60px 60px;
+    }
+    .image-text{
+        top: 43%;
+        left: 12%;
+        font-size: 38px;
+    }
+}
+@media (max-width: 768px){
+    .main{
+        padding: 13% 60px 60px;
+    }
+    .image-text{
+        top: 45%;
+        left: 10%;
+        font-size: 28px;
+    }
+    .image img {
+        height: 300px;
+    }
+}
+@media (max-width: 600px){
+    .main{
+        padding: 15% 60px 60px;
+    }
+    .image-text{
+        top: 45%;
+        left: 10%;
+        font-size: 20px;
+    }
+    .image img {
+        height: 300px;
+    }
+}
+@media (max-width: 425px){
+    .main{
+        padding: 20% 60px 60px;
+    }
+    .image-text{
+        top: 45%;
+        left: 5%;
+        font-size: 16px;
+    }
+    .image img {
+        height: 200px;
+    }
+}
+@media (max-width: 320px){
+    .main{
+        padding: 20% 20px 20px;
+    }
+    .image-text{
+        top: 45%;
+        left: 5%;
+        font-size: 16px;
+    }
+    .image img {
+        height: 200px;
+    }
+}

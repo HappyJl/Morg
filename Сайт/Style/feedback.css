@@ -1,0 +1,119 @@
+body{
+    margin: 0px;
+    background-color: var(--sub-color);
+}
+.main{
+    min-height: 650px;
+    padding: 7% 20px 20px;
+}
+.conteiner{
+    height: 650px;
+    background-color: var(--main-color);
+    border-radius: 8px;
+    display: flex;
+    box-shadow: 0px 0px 20px 3px black;
+}
+.form{
+    padding-top: 1%;
+    width: 60%;
+}
+.ent{
+    padding-left: 5%;
+    padding-top: 15px;
+}
+label{
+    display: block;
+    font-size: 26px;
+    margin-bottom: 8px;
+}
+input[type="text"], input[type="email"] {
+    border-width: 0;
+    outline: none;
+    margin: 0;
+    width: 90%;
+    padding: 10px 15px;
+    background: #e6e6e6;
+    transition: all 220ms ease;
+    border-radius: 8px;
+}
+input[type="text"]:focus, input[type="email"]:focus {
+    box-shadow: inset 0 0 0 2px rgba(0,0,0,.2);
+}
+button {
+    padding: 10px 0;
+    border-width: 0;
+    border-radius: 8px;
+    display: block;
+    width: 120px;
+    margin: 25px auto 0;
+    background: #60e6c5;
+    color: black;
+    font-size: 14px;
+    outline: none;
+    text-transform: uppercase;
+}
+button:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 3px black;
+
+}
+.map{
+    border-radius: 8px;
+    margin-top: 2%;
+    width: 700px;
+    height: 550px;
+    box-shadow: 0px 0px 20px 2px black;
+}
+.tmap{
+    border-radius: 8px;
+    width: 700px;
+    height: 550px;
+}
+@media (max-width: 1780px){
+    .tmap{
+        width: 600px;
+        height: 500px;
+    }
+    .map{
+        width: 600px;
+        height: 500px;
+    }
+}
+@media (max-width: 1560px){
+    .tmap{
+        width: 500px;
+        height: 500px;
+    }
+    .map{
+        width: 500px;
+        height: 500px;
+    }
+}
+@media (max-width: 1300px){
+    .tmap{
+        width: 400px;
+        height: 500px;
+    }
+    .map{
+        width: 400px;
+        height: 500px;
+    }
+}
+@media (max-width: 1024px){
+    .conteiner{
+        display: block;
+        height: 1200px;
+    }
+    .tmap{
+        width: 100%;
+        height: 550px;
+    }
+    .map{
+        margin-left: 40px;
+        width: 80%;
+        height: 550px;
+    }
+    .form{
+        width: 100%;
+    }
+}
